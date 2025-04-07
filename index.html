@@ -5,42 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currículo - Yuri da Costa Santos</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 40px;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .foto {
-      flex: 0 0 150px;
-      margin-right: 20px;
-    }
-    .foto img {
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
-    }
-    .conteudo {
-      flex: 1;
-    }
-    h1, h2, h3 {
-      color: #333;
-    }
-    .info {
-      margin-bottom: 10px;
-    }
-    .info strong {
-      color: #555;
-    }
-    .section-title {
-      margin-top: 20px;
-      border-top: 2px solid #ddd;
-      padding-top: 10px;
-    }
-  </style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+    padding: 40px;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    padding: 30px;
+  }
+
+  .topo {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  .foto {
+    flex: 0 0 120px;
+    margin-right: 20px;
+  }
+
+  .foto img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0077cc;
+  }
+
+  .info-principal h1 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 5px;
+  }
+
+  .info-principal p {
+    margin: 4px 0;
+  }
+
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0077cc;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+  }
+
+  .subsection-title {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  ul {
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  .info-extra {
+    margin-bottom: 8px;
+  }
+
+  em {
+    color: #666;
+  }
+
+  strong {
+    color: #222;
+  }
+</style>
 </head>
 <body>
 
@@ -50,7 +112,6 @@
     </div>
     <div class="conteudo">
       <h1>Yuri da Costa Santos</h1>
-      
       <div class="info">
         <strong>📍 Localização:</strong> Sapiranga, Rio Grande do Sul
       </div>
@@ -58,43 +119,91 @@
         <strong>📧 E-mail:</strong> <a href="mailto:yuri132costa@gmail.com">yuri132costa@gmail.com</a>
       </div>
       <div class="info">
-        <strong>📱 Telefone:</strong> 48 99987-9383, 51 99570-4585
+        <strong>📱 Telefone:</strong> (48) 99987-9383, (51) 99570-4585
+      </div>
+      <div class="info">
+        <strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">linkedin.com/in/seu-perfil</a>
       </div>
     </div>
   </div>
 
   <div class="section-title">
+    <h2>🧠 Resumo Profissional</h2>
+    <p>Estudante de Tecnologia da Informação com experiência prática em suporte técnico e desenvolvimento de software. Proativo, comunicativo e com sólida base em redes e programação. Em busca de oportunidades para aplicar e expandir conhecimentos técnicos em ambientes colaborativos.</p>
+  </div>
+
+  <div class="section-title">
     <h2>🎯 Objetivo Profissional</h2>
-    <p>Buscando estágio nas áreas de Desenvolvimento de Software, Redes e Suporte Técnico, onde posso aplicar meus conhecimentos em manutenção de computadores, redes e desenvolvimento de soluções.</p>
+    <p>Estágio nas áreas de Desenvolvimento de Software, Redes ou Suporte Técnico.</p>
   </div>
 
   <div class="section-title">
     <h2>🎓 Formação Acadêmica</h2>
     <p><strong>Centro Sinodal de Ensino Médio de Sapiranga - Duque</strong> — <em>Bacharelado em Tecnologia da Informação</em></p>
-    <p><strong>Previsão de Conclusão:</strong> 12/2025</p>
+    <p><strong>Previsão de Conclusão:</strong> Dezembro/2025</p>
     <p><strong>Principais disciplinas:</strong> Desenvolvimento de Software, Redes de Computadores, Estruturas de Dados, Segurança da Informação.</p>
     <p><strong>Ensino Médio Completo</strong></p>
   </div>
 
   <div class="section-title">
     <h2>🧑‍💻 Experiência Profissional</h2>
-    <p><strong>Câmara Municipal de Vereadores de Sapiranga</strong><br><em>Estagiário</em> | 06/2023 - 12/Atual</p>
+    <p><strong>Câmara Municipal de Vereadores de Sapiranga</strong><br><em>Estagiário</em> | 06/2023 - 12/2024</p>
+    <ul>
+      <li>Atendimento e suporte técnico a usuários internos.</li>
+      <li>Manutenção preventiva e corretiva de computadores e redes.</li>
+      <li>Apoio em desenvolvimento e manutenção de sistemas internos.</li>
+    </ul>
+
+    <p><strong>Beira Rio Calçados</strong><br><em>Auxiliar de Expedição</em> | 01/2025 - Atual</p>
+  <ul>
+    <li>Separação e conferência de mercadorias para envio.</li>
+    <li>Organização do setor de expedição e controle de estoque.</li>
+    <li>Auxílio no carregamento de caminhões e controle de notas fiscais.</li>
+  </ul>
+  </div>
+
+  <div class="section-title">
+    <h2>📚 Cursos Complementares</h2>
+    <ul>
+      <li>Curso de Python para Iniciantes – Curso em Vídeo (40h)</li>
+      <li>Git e GitHub na Prática – Alura (8h)</li>
+      <li>Introdução à Segurança da Informação – Fundação Bradesco (12h)</li>
+    </ul>
   </div>
 
   <div class="section-title">
     <h2>🛠️ Habilidades Técnicas</h2>
     <h3>Desenvolvimento:</h3>
     <ul>
-      <li>Linguagens de Programação: Python, Java, JavaScript.</li>
-      <li>Frameworks: Django, React, Node.js.</li>
-      <li>Banco de Dados: MySQL, PostgreSQL.</li>
-      <li>Ferramentas: Git, Docker, VSCode.</li>
+      <li>Linguagens: Python, Java, JavaScript</li>
+      <li>Frameworks: Django, React, Node.js</li>
+      <li>Banco de Dados: MySQL, PostgreSQL</li>
+      <li>Ferramentas: Git, Docker, VSCode</li>
     </ul>
 
     <h3>Redes:</h3>
     <ul>
-      <li>Configuração de redes TCP/IP, roteadores e switches.</li>
-      <li>Protocolos: DNS, HTTP, DHCP, FTP, SSH.</li>
+      <li>Configuração de redes TCP/IP, roteadores e switches</li>
+      <li>Protocolos: DNS, HTTP, DHCP, FTP, SSH</li>
+    </ul>
+  </div>
+
+  <div class="section-title">
+    <h2>💬 Soft Skills</h2>
+    <ul>
+      <li>Boa comunicação</li>
+      <li>Trabalho em equipe</li>
+      <li>Proatividade</li>
+      <li>Organização</li>
+      <li>Facilidade de aprendizado</li>
+    </ul>
+  </div>
+
+  <div class="section-title">
+    <h2>🌐 Idiomas</h2>
+    <ul>
+      <li><strong>Inglês:</strong> Intermediário</li>
+      <li><strong>Espanhol:</strong> Básico</li>
     </ul>
   </div>
 
